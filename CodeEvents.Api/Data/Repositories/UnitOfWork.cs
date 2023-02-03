@@ -4,12 +4,12 @@
     {
         private readonly CodeEventsApiContext db;
 
-        public CodeEventRepository codeEventRepository { get; }
+        public CodeEventRepository CodeEventRepository { get; }
 
         public UnitOfWork(CodeEventsApiContext db)
         {
             this.db = db;
-            codeEventRepository = new CodeEventRepository(db);
+            CodeEventRepository = new CodeEventRepository(db);
         }
 
         public async Task CompleteAsync()
